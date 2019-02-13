@@ -8,10 +8,9 @@ bootstrap = Bootstrap()
 db = SQLAlchemy()
 
 def create_app(config_name):
-    app = Flask(__name__)
+app = Flask(__name__)
 
     app.config.from_object(config_options[config_name])
-
     bootstrap.init_app(app)
     db.init_app(app)
 
@@ -23,3 +22,4 @@ def create_app(config_name):
     # configure_request(app)
 
     return app
+

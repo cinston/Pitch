@@ -1,16 +1,16 @@
 from flask import render_template,request,redirect,url_for,abort
 from . import main
-from ..models import Reviews, User
+from ..models import User
 
 @main.route('/')
 def index():
 
     title = 'Home Page - Get The latest Pitch stories'
-    return render_template('index.html',title = title)
+    return render_template("index.html",title = title)
 
-# @main.route('/***/pitch/new', methods = ['GET','POST'])
-# @login_required
-# def new_pitch():
+@main.route('/***/pitch/new', methods = ['GET','POST'])
+@login_required
+def new_pitch():
 
 @main.route('/user/<uname>')
 def profile(uname):
