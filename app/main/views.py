@@ -9,7 +9,7 @@ def index():
     return render_template("index.html",title = title)
 
 @main.route('/***/pitch/new', methods = ['GET','POST'])
-@login_required
+# @login_required
 def new_pitch():
 
     @main.route('/user/<uname>')
