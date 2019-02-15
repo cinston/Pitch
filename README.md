@@ -8,6 +8,9 @@
 
 A web application that allows users to submit pitches based on different categories.
 
+# Link to live site
+ https://piiitch.herokuapp.com
+
 ## Setup/Installation Requirements
 
 ### Technologies Used
